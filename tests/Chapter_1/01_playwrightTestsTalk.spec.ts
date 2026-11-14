@@ -14,7 +14,7 @@ test('Validate Playwright Testers Talk YouTube Page Title', async ( {page} ) => 
 
     //CANT use google because its asking for Captcha
     await test.step('Navigate to Duck Duck Go', async () => {
-        await page.goto("https://google.com");
+        await page.goto("https://duckduckgo.com");
     });
 
     await test.step('Search for playwright by testers talk', async () => {
