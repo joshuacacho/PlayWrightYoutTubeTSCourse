@@ -74,7 +74,7 @@ test('Identify Different Page Objects on Page With Locators', async ( {page} ) =
        
     });
 
-    // Examply by Placeholder
+    // Example by Placeholder
         // await page.getByPlaceholder("value").click();
             // there will be a placeholder value in the DOM HTML Elements
     await test.step("Locator By Placeholder", async () => {
@@ -96,14 +96,14 @@ test('Identify Different Page Objects on Page With Locators', async ( {page} ) =
         // await page.locator("tagname[@attr='value']").click()
     await test.step("Locator By CSS", async () => {
         await page.locator("input[name='search_query']").fill("CSS Testers Talk");
-        await page.pause();
     });
 
     // Example by Title
         // await page.getByTitle('value').click()
             // there will be a Title value in the DOM HTML Elements
     await test.step("Locator By Title", async () => {
-
+        await page.getByTitle("YouTube Home").first().click();
+        await page.pause();
     });
  
  
