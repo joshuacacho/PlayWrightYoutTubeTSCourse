@@ -8,7 +8,7 @@ test('Element Screenshot on Page of Any Item', async ({page}) => {
 
     //only takes the screenshot of the page at the current location shown, NOT THE ENTIRE PAGE
     await test.step('Page Screenshot of Current Location on Page', async () => {
-        await page.screenshot({path: './screenshots/pageScreenshot.jpeg'})
+        await page.screenshot({path: './screenshots/pageScreenshot.jpeg'});
     });
 
 })
