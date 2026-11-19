@@ -1,7 +1,7 @@
 
 
 // import playwright module
-import { test, expect, FrameLocator, Locator } from "@playwright/test";
+import { test, FrameLocator, Locator } from "@playwright/test";
 
 
 test("Playwright Date Pickers", async ({ page }) => {
