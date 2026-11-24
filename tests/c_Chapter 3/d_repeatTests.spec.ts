@@ -1,11 +1,9 @@
-
-
 // import playwright module
 import { test, expect, Locator } from "@playwright/test";
 
 
 
-test("Stability Test to ensure Search Can Be Performed 50 Times Successfully", {tag : ['@RegressionTest']}, async ({ page }) => {
+test("Stability Test to ensure Search Can Be Performed 50 Times Successfully", async ({ page }) => {
 
   const search: Locator = page.getByPlaceholder("Search privately");
 

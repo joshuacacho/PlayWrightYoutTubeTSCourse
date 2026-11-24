@@ -1,11 +1,9 @@
-
-
 // import playwright module
 import { test, expect, Locator } from "@playwright/test";
 
 
 
-test("Test 1", {tag : ['@RegressionTest']}, async ({ page }) => {
+test("Assigning Tags Test 1", {tag : ['@RegressionTest']}, async ({ page }) => {
 
   const searchBox: Locator = page.getByPlaceholder("Search");
 
@@ -24,7 +22,7 @@ test("Test 1", {tag : ['@RegressionTest']}, async ({ page }) => {
 
 // can have more than 1 tag name per test as some you 
   //may want to run as Smoke and also a Core test
-test("Test 2", {tag : ['@SmokeTest', '@CoreTest']},async ({ page }) => {
+test("Assigning Tags Test 2", {tag : ['@SmokeTest', '@CoreTest']},async ({ page }) => {
 
   const searchBox: Locator = page.getByPlaceholder("Search");
 
@@ -41,7 +39,7 @@ test("Test 2", {tag : ['@SmokeTest', '@CoreTest']},async ({ page }) => {
 
 });
 
-test("Test 3", {tag : ['@CoreTest']},async ({ page }) => {
+test("Assigning Tags Test 3", {tag : ['@CoreTest']},async ({ page }) => {
 
   const searchBox: Locator = page.getByPlaceholder("Search");
 

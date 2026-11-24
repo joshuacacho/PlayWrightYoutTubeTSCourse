@@ -1,5 +1,3 @@
-
-
 // import playwright module
 import { test, expect, Locator } from "@playwright/test";
 
