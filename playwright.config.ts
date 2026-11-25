@@ -15,7 +15,7 @@ export default defineConfig({
   testDir: './tests',
   //set global timeout for all test cases within our project
     //imagine 100 tests that need to be finished in 1 hour or less
-  globalTimeout: 1 * 60 * 100, // purposely set to fail for 1 ms 
+  // globalTimeout: 1 * 60 * 100, // purposely set to fail for 1 ms 
   /* set timeout duration for all tests within test file to finish*/
     // timeout: 1 * 60 * 2000,
   // Assertion timeout setting
