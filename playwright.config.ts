@@ -13,6 +13,15 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  //set global timeout for all test cases within our project
+    //imagine 100 tests that need to be finished in 1 hour or less
+  globalTimeout: 1 * 60 * 100, // purposely set to fail for 1 ms 
+  /* set timeout duration for all tests within test file to finish*/
+    // timeout: 1 * 60 * 2000,
+  // Assertion timeout setting
+    // expect : {
+    //   timeout: 10000, // time between start time of attempting to perform action on object and if the end time is greater than timeout value then throw error
+    // },
   /* Run tests in files in parallel */
   fullyParallel: false,
   // Run one test file at a time (disables parallel workers)
@@ -39,7 +48,9 @@ export default defineConfig({
     headless: false,
     screenshot: 'only-on-failure',
     // using the common data-test-tab config value we can now call any objects that share that locator
-    testIdAttribute: 'data-tab-item'
+    testIdAttribute: 'data-tab-item',
+    // for assigning timeout for elements that need to be interacted with, like .click(), .fill() and .check
+    // actionTimeout: 10000
   },
 
   /* Configure projects for major browsers */
