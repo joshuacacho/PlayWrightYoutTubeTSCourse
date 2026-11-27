@@ -1,0 +1,12 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.408173">
+<testsuite name="d_Chapter 4/d_reportTypes.spec.ts" timestamp="2026-11-27T03:25:47.820Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.305" errors="0">
+<testcase name="Playwright Alert" classname="d_Chapter 4/d_reportTypes.spec.ts" time="2.305">
+<system-out>
+<![CDATA[alert Sample alert
+
+[[ATTACHMENT|../test-results/d_Chapter 4-d_reportTypes-Playwright-Alert-Google-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

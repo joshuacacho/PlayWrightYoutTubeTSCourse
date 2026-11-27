@@ -34,7 +34,14 @@ export default defineConfig({
     // It tells Playwright to use 1 worker when running in a Continuous Integration (CI) environment, and to automatically choose the optimal number of parallel workers when running locally on your computer
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['json', { outputFile : 'Reports/json-test-report.json'}], 
+    ['junit', { outputFile : 'Reports/junit-test-report.xml'}],  // best for pipeline execution
+    ['list'],
+    // ['dot'] // created one . per test and if a test fails the . is replaced with an F
+     ['allure-playwright']
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */

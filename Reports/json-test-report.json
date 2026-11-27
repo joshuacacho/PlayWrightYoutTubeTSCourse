@@ -1,0 +1,199 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/node_modules/.bin/playwright",
+      "test",
+      "tests/d_Chapter 4/d_reportTypes.spec.ts"
+    ],
+    "configFile": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/playwright.config.ts",
+    "rootDir": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "Google Chrome",
+        "testDir": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/tests",
+        "snapshotDir": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "trace": "on",
+          "headless": false,
+          "screenshot": "only-on-failure",
+          "testIdAttribute": "data-tab-item",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "Google Chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "Reports/json-test-report.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "Reports/junit-test-report.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/node_modules/allure-playwright/dist/cjs/index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "d_Chapter 4/d_reportTypes.spec.ts",
+      "file": "d_Chapter 4/d_reportTypes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Playwright Alert",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2305,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "alert Sample alert\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to Page For Alerts",
+                      "duration": 829
+                    },
+                    {
+                      "title": "click Alert Link to Bring up PopUp",
+                      "duration": 423
+                    },
+                    {
+                      "title": "Validate alert is present with correct Text",
+                      "duration": 10
+                    }
+                  ],
+                  "startTime": "2026-11-27T03:25:48.447Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/cachomac/Documents/Udemy Courses/Playwright TypeScript YouTube Course/test-results/d_Chapter 4-d_reportTypes-Playwright-Alert-Google-Chrome/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde6e673d241342e4b22-6a6fcf154a06172bf6e7",
+          "file": "d_Chapter 4/d_reportTypes.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-27T03:25:47.784Z",
+    "duration": 4408.173,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
